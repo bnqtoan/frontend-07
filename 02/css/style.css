@@ -1,0 +1,25 @@
+a:hover{
+    font-size: 3rem;
+
+}
+
+.input:focus{
+    border: 3px purple solid;
+}
+
+#tung {
+        color: blue;
+      }
+      .fnb {
+        text-decoration: underline;
+        color: red;
+      }
+      .trai-cay {
+        color: green;
+      }
+      p {
+        color: rgb(165, 118, 118);
+        font-weight: bold;
+        margin-top: 60px;
+        max-width: 300px;
+      }

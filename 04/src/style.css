@@ -1,0 +1,42 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+
+.the-box{
+    width: 150px;
+    height: 150px;
+    background: purple;
+    animation: demo 3s forwards infinite;
+}
+
+.the-box:hover{
+    
+}
+
+.slide-in{
+    animation: slideIn forwards 1s;
+}
+
+@keyframes demo{
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(100px, 0, 0);
+        border-radius: 100%;
+        background-color: yellow;
+    }
+    75%{
+        transform: translate3d(100px, 100px, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideIn{
+    from {
+        transform: translate3d(-100vw, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

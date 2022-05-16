@@ -1,0 +1,10 @@
+{
+    "name": "ABC",
+    "age": 88,
+    "gender": "male",
+    "address": {
+        "city": "HCM",
+        "ward": "22",
+        "district": "Binh Thanh"
+    }
+}
