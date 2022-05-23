@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="h-8 bg-purple-500 splide__slide">Slide 01</li>
+            <li class="h-8 bg-yellow-500 splide__slide">Slide 02</li>
+            <li class="h-8 bg-red-500 splide__slide">Slide 03</li>
+            <li class="h-8 bg-purple-500 splide__slide">Slide 04</li>
+            <li class="h-8 bg-yellow-500 splide__slide">Slide 05</li>
+            <li class="h-8 bg-red-500 splide__slide">Slide 06</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          perPage: 3,
+          gap: "30px",
+          breakpoints: {
+            640: {
+              perPage: 1,
+              padding: { right: "25%" },
+            },
+            768: {
+              perPage: 2,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+  </body>
+</html>
